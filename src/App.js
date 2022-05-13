@@ -1,22 +1,23 @@
-import logo from './logo.svg';
+import PokemonItem from './components/PokemonItem'
+import { Route,  Routes, useNavigate } from 'react-router-dom';
 import './App.css';
+import Login from './pages/Login';
+import PokemonList from './pages/PokemonList';
+import Pokemon from './pages/Pokemon';
 
 function App() {
+
+  const navigate = useNavigate() 
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Routes>
+          <Route path='/login' element={<Login/>}   />
+          <Route path='/pokedex'  element={<PokemonList/>}  />
+          <Route path='/pokedex/:id'  element={<Pokemon/>}  />
+        </Routes>
+        <button onClick={ () => navigate(-1)}>Regresar</button>
       </header>
     </div>
   );

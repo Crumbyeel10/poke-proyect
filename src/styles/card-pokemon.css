@@ -1,0 +1,29 @@
+.container-pokemons{
+    width: 100%;
+}
+
+.pokemon-items{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    width: 100%;
+    /* padding: 20px; */
+    
+}
+
+.card-pokemon{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 1px solid rgb(33, 32, 30);
+    border-color: azure;
+}
+
+.card-pokemon > h1{
+    color: rgb(95, 95, 95);
+}
+
+.img-card{
+    width: 200px;
+    height: 200px;
+}
+
