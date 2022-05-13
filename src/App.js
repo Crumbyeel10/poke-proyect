@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Routes>
-          <Route path='/login' element={<Login/>}   />
+          <Route path='/' element={<Login/>}   />
           <Route path='/pokedex'  element={<PokemonList/>}  />
           <Route path='/pokedex/:id'  element={<Pokemon/>}  />
         </Routes>
